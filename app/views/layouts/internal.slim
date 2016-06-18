@@ -6,6 +6,7 @@ html lang=I18n.locale
     = render 'layouts/internal/header'
     .content
       = render 'layouts/internal/sidebar'
+      == cell('test')
       section
         = yield
     = render 'layouts/shared/flash'

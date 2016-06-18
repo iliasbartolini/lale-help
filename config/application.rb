@@ -8,6 +8,8 @@ module LaleHelp
   class Application < Rails::Application
     LaleHelp::Application.config.assets.version = '1.0'
 
+    config.cells.with_assets = ["test_cell"]
+    
     config.assets.precompile += %w( .svg .eot .woff .woff2 .ttf )
 
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
